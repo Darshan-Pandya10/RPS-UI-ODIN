@@ -4,11 +4,17 @@
     padding: 0;
 }
 
+/* body{
+    background-color: #DBEDF3;
+} */
+
 h1{
     text-align: center;
-    padding: 5rem;
+    padding: 3rem;
+    margin-bottom: 2rem;
     font-size: 50px;
     font-family: 'Righteous', cursive;
+    background-color: #4ECCA3;
 }
 
 .choices{
@@ -31,21 +37,25 @@ h1{
     height: 10rem;
     margin: 3rem;
     padding: 2rem;
-    border: 2px solid black;
+    border: 3px solid #65799B;
     cursor: pointer;
+    /* background-color: brown; */
+    background-color: #DBD8E3;
 }
 
-.choice:hover{
-    box-shadow: 3px 3px 25px 0px black;
-    transform: scale(1.05);
-    transition: 0.3s ease-in-out 0.1s;
-} 
+.choice-decline {
+    cursor: not-allowed;
+}
 
 .scores{
     width: 20rem;
-    border: 1px solid black;
     margin: 3rem auto;
     padding: 1rem;
+    border-left: 5px solid #4ECCA3;
+    background-color: #DBD8E3;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .round{
@@ -61,16 +71,56 @@ p{
 .display-choice{
     width: 30rem;
     height : 8rem;
-    border: 1px solid black;
+    border-left: 5px solid #4ECCA3;
+    background-color: #DBD8E3;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     text-align: left;
     margin: 0 auto 3rem auto;
+    padding-left: 1rem;
+
 }
 
 .player-score {
     margin-bottom: 1rem;
 }
+
+.result{
+    border-left: 5px solid #4ECCA3;
+    background-color: #DBD8E3;
+    width: 20rem;
+    margin: 0 auto;
+    padding: 1rem;
+    display: none;
+}
+
+.result-show{
+    border-left: 5px solid #4ECCA3;
+    background-color: #DBD8E3;
+    width: 20rem;
+    margin: 0 auto;
+    padding: 1rem;
+    display: block;
+}
+
+.final-result{
+    border-left: 5px solid #4ECCA3;
+    background-color: #DBD8E3;
+    width: 25rem;
+    margin: 0.5rem auto;
+    padding: 1rem;
+    display: none;
+}
+
+.final-result-show{
+    border-left: 5px solid #4ECCA3;
+    background-color: #DBD8E3;
+    width: 25rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: block;
+}
+
 

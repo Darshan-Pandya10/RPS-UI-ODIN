@@ -4,6 +4,12 @@ const cChoice = document.querySelector(".computer-choice");
 const round = document.querySelector(".round");
 const result = document.querySelector(".result");
 
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissor = document.querySelector('#scissor');
+
+
+
 let playerPoint = document.querySelector(".player-score");
 let computerPoint = document.querySelector(".computer-score");
 
@@ -23,9 +29,10 @@ let Options = ["rock", "paper", "scissor"];
 choices.forEach((choice) => {
   choice.addEventListener("click", () => {
     for(i = gameRound ; i <= 5 ; i++) {
-
+    result.classList.add('result-show')
     playerSelection = choice.getAttribute("id");
     console.log(playerSelection);
+    result.classList.add('.result-show')
 
     pChoice.textContent = `Player Choice : ${playerSelection}`;
 
@@ -38,6 +45,7 @@ choices.forEach((choice) => {
 
       function computerPlay() {
         cChoice.textContent = `Computer Choice : ${computerSelection}`;
+
       }
       computerPlay();
 
@@ -85,19 +93,35 @@ choices.forEach((choice) => {
       }
      
     }
-    if(gameRound === 5){
-      if (playerScore === computerScore){
-        finalResult.textContent = 'game is tie!';
-      }
+    if(gameRound == 5){
+      finalResult.classList.add('final-result-show')
+      rock.classList.add('choice-decline')
+      paper.classList.add('choice-decline')
+      scissor.classList.add('choice-decline')
+
+
+      
     
-      else if (playerScore > computerScore){
+      if (playerScore > computerScore){
         finalResult.textContent = 'Congrats! You are a Winner';
       }
     
       else if (playerScore < computerScore){
         finalResult.textContent = 'You Lost the Game, Better Luck Next Time.'
       }
+
+      else if (playerScore == computerScore){
+        finalResult.textContent = 'game is tie!';
+      }
+
+      else{
+        finalResult.textContent = 'Something went wrong!'
+      }
       
+    }
+
+    else {
+      finalResult.textContent = 'Something went wrong!'
     }
 
   }
@@ -110,12 +134,14 @@ choices.forEach((choice) => {
 });
 
 function Restart() {
-gameRound = 1;
+gameRound = 0;
 playerScore = 0;
 computerScore = 0;
 
-finalResult.textContent = "";
-result.textContent = "";
+finalResult.textContent = " ";
+result.textContent = " ";
+pChoice.textContent = " Player Choice : Click on one of this tile  ";
+cChoice.textContent = " ";
 
 }
 
