@@ -8,6 +8,8 @@ const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissor = document.querySelector('#scissor');
 
+const restart = document.querySelector('.restart');
+
 
 
 let playerPoint = document.querySelector(".player-score");
@@ -115,36 +117,54 @@ choices.forEach((choice) => {
         }
   
         finalResult.classList.add('final-result-show')
-        rock.classList.add('choice-decline')
-        paper.classList.add('choice-decline')
-        scissor.classList.add('choice-decline')
-        
+        // rock.classList.add('choice-decline')
+        // paper.classList.add('choice-decline')
+        // scissor.classList.add('choice-decline')
+
+       
+        restart.classList.add('restart-button-show')
+
       }
      
     }
     
-
-
-  
-  
     playGame();
 
   })
 })
 
-// function Restart() {
-// gameRound = 0;
-// playerScore = 0;
-// computerScore = 0;
 
-// finalResult.textContent = " ";
-// result.textContent = " ";
-// pChoice.textContent = " Player Choice : Click on one of this tile  ";
-// cChoice.textContent = " ";
+restart.addEventListener('click',() => {
 
+  Restart();
+
+  restart.classList.remove('restart-button-show')
+  
+  })
 
 
-// }
+
+function Restart() {
+
+gameRound = 0;
+playerScore = 0;
+computerScore = 0;
+
+round.textContent = "Game Round : 0 "
+
+playerPoint.textContent = "Player Point :  0 ";
+computerPoint.textContent = "Computer Point :  0 ";
+
+
+
+result.textContent = " ";
+pChoice.textContent = " Player Choice : Click on one of this tile  ";
+cChoice.textContent = " Computer Choice : ";
+
+result.classList.remove('result-show')
+finalResult.classList.remove('final-result-show')
+
+}
 
 
 

@@ -31,6 +31,34 @@ h1{
     text-shadow: 2px 2px 2px #a195c8;
 }
 
+.header-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart{
+    width: 8rem;
+    padding: 1rem;
+    background-color: #DBD8E3;
+    cursor: pointer;
+    display: none;
+    border: 3px solid #65799B;
+    font-family: 'Righteous', cursive;
+    font-size: 16px;
+    margin: 0rem auto 2rem auto;
+}
+
+.restart-button-show{
+    width: 8rem;
+    padding: 1rem;
+    background-color: #DBD8E3;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0rem auto 2rem auto;
+}
+
 .choices{
     display: flex;
     flex-direction: row;
