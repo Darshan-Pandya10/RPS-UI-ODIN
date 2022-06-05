@@ -2,18 +2,11 @@
     --side-border-color : #5C5470;
 }
 
-
-
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-/* body{
-    background-color: #DBEDF3;
-} */
 
 h1{
     text-align: center;
@@ -85,7 +78,6 @@ h1{
     border: 3px solid #65799B;
     cursor: pointer;
     background-color: #DBD8E3;
-    /* background-color: #DDDDDD; */
     display: inline-block;
     transition: transform 300ms 100ms ease-in-out;
 }
@@ -109,7 +101,6 @@ h1{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    /* border-radius: 0rem 1rem 1rem 0rem ; */
 }
 
 .round{
@@ -120,7 +111,6 @@ p{
     text-align: center;
     font-family: 'Righteous', cursive;
 }
-
 
 .display-choice{
     width: 30rem;
@@ -135,7 +125,6 @@ p{
     margin: 0 auto 3rem auto;
     padding-left: 1rem;
 }
-
 
 .player-score {
     margin-bottom: 1rem;
