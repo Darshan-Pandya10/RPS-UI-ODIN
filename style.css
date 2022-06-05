@@ -71,7 +71,10 @@ h1{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
 
+.choice-div-dontshow{
+    display: none;
 }
 
 .choice{
@@ -83,10 +86,8 @@ h1{
     cursor: pointer;
     background-color: #DBD8E3;
     /* background-color: #DDDDDD; */
-
+    display: inline-block;
     transition: transform 300ms 100ms ease-in-out;
-
-
 }
 
 .choice:hover{

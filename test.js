@@ -14,16 +14,18 @@ const restart = document.querySelector('.restart');
 
 let playerPoint = document.querySelector(".player-score");
 let computerPoint = document.querySelector(".computer-score");
+const choiceDiv = document.querySelector('.choice-div');
 
-let gameRound = 1;
-let playerScore = 0;
-let computerScore = 0;
 
 const finalResult = document.querySelector('.final-result')
 
 const choices = document.querySelectorAll(".choice");
 
 let Options = ["rock", "paper", "scissor"];
+
+let gameRound = 1;
+let playerScore = 0;
+let computerScore = 0;
 
 
 
@@ -116,13 +118,23 @@ choices.forEach((choice) => {
           finalResult.textContent = "game is tie!";
         }
   
+        restart.classList.add('restart-button-show')
         finalResult.classList.add('final-result-show')
+        choiceDiv.classList.add('choice-div-dontshow')
+
+
+        // choice.removeEventListener("onfocus", () => {
+
         // rock.classList.add('choice-decline')
         // paper.classList.add('choice-decline')
         // scissor.classList.add('choice-decline')
 
+
+        // })
+
+
        
-        restart.classList.add('restart-button-show')
+        
 
       }
      
@@ -151,18 +163,15 @@ playerScore = 0;
 computerScore = 0;
 
 round.textContent = "Game Round : 0 "
-
 playerPoint.textContent = "Player Point :  0 ";
 computerPoint.textContent = "Computer Point :  0 ";
-
-
-
 result.textContent = " ";
 pChoice.textContent = " Player Choice : Click on one of this tile  ";
 cChoice.textContent = " Computer Choice : ";
-
 result.classList.remove('result-show')
 finalResult.classList.remove('final-result-show')
+choiceDiv.classList.remove('choice-div-dontshow')
+
 
 }
 
