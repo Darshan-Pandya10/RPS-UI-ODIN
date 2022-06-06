@@ -166,4 +166,77 @@ p{
     display: block;
 }
 
+/* working on media queries */
+
+@media only screen and (max-width:740px){
+
+    
+h1{
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 40px;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    border-radius: 1rem;
+    font-family: 'Righteous', cursive;
+    background-color: #BDBDD7;
+    color: #46466E;
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 2px 2px #a195c8;
+}
+
+.display-choice{
+    width: 22rem;
+    margin: 0 auto 2rem auto;
+}
+
+.choice{
+    width: 5rem;
+    height: 5rem;
+    padding: 1.2rem;
+    margin: 1rem;
+
+}
+
+.scores{
+    width: 22rem;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.final-result{
+    width: 22rem;
+    margin: 1rem auto;
+    display: none;
+}
+
+.final-result-show{
+    width: 22rem;
+    display: block;
+    margin: 1rem auto;
+}
+
+.result{
+    width: 22rem;
+    display: none;
+    margin: 0 auto;
+}
+
+.result-show{
+    width: 22rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.restart-button-show{
+    margin: 1.5rem auto 2.5rem auto;
+}
+
+
+
+
+}
+
 
