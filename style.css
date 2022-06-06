@@ -246,6 +246,18 @@ h1{
     margin: 1.5rem auto 2.5rem auto;
 }
 
+footer h3{
+    font-family: 'Righteous', cursive;
+    margin-top: 3rem;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 2rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+
+}
+
 
 
 
