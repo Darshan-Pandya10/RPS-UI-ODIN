@@ -166,6 +166,18 @@ p{
     display: block;
 }
 
+footer h3{
+    font-family: 'Righteous', cursive;
+    margin-top: 3rem;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 2rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+
+}
+
 /* working on media queries */
 
 @media only screen and (max-width:740px){
@@ -173,7 +185,7 @@ p{
     
 h1{
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 0rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
     font-size: 40px;
@@ -221,13 +233,13 @@ h1{
 .result{
     width: 22rem;
     display: none;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .result-show{
     width: 22rem;
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .restart-button-show{
