@@ -133,7 +133,7 @@ restart.addEventListener('click',() => {
 
 function Restart() {
 
-gameRound = 0;
+gameRound = 1;
 playerScore = 0;
 computerScore = 0;
 
